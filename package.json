@@ -11,7 +11,7 @@
   "license": "MIT",
   "main": "furo-catalog.js",
   "scripts": {
-    "build": "node_modules/@furo/specs/_scripts/build.js",
+    "build": "./node_modules/@furo/specs/_scripts/build.js",
     "init": "./node_modules/@furo/specs/_scripts/init.js"
   },
   "dependencies": {

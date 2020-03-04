@@ -1,7 +1,7 @@
 {
   "init": {
     "packages": [
-      "tree"
+      "example"
     ],
     "excludes": [],
     "default_type_for_identities": "string"

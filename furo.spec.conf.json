@@ -7,7 +7,7 @@
     "default_type_for_identities": "string"
   },
   "spec_dir": "./specs",
-  "import_spec_dirs": ["node_modules/@furo/specs/_baseTypes"],
+  "import_spec_dirs": ["node_modules/@furo/spec-basetypes"],
   "swagger": true,
   "grpc_gateway": true,
   "java": false,

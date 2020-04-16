@@ -12,7 +12,8 @@
       "example/example.proto",
       "google/protobuf/empty.proto"
     ],
-    "targetfile": "exampleservice.proto"
+    "targetfile": "exampleservice.proto",
+    "options": {"go_package": "/exampleservice"}
   },
   "services": {
     "List": {

@@ -15,8 +15,8 @@
     "init": "./node_modules/@furo/specs/_scripts/init.js"
   },
   "dependencies": {
-    "@furo/spec-basetypes": "^1.2.3",
-    "@furo/specs": "^1.2.3"
+    "@furo/spec-basetypes": "^1.3.0",
+    "@furo/specs": "^1.4.0"
   },
   "devDependencies": {},
   "publishConfig": {

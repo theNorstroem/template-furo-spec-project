@@ -13,7 +13,9 @@
       "google/protobuf/empty.proto"
     ],
     "targetfile": "exampleservice.proto",
-    "options": {"go_package": "/exampleservice"}
+    "options": {
+      "go_package": "/exampleservice"
+    }
   },
   "services": {
     "List": {
@@ -37,7 +39,7 @@
         }
       },
       "deeplink": {
-        "description":"Describe_the_query_params_if_you_have",
+        "description": "Describe_the_query_params_if_you_have",
         "rel": "list",
         "href": "/api/examples",
         "method": "GET"

@@ -9,15 +9,7 @@
     "url": ""
   },
   "license": "MIT",
-  "main": "furo-catalog.js",
-  "scripts": {
-    "build": "./node_modules/@furo/specs/_scripts/build.js",
-    "init": "./node_modules/@furo/specs/_scripts/init.js"
-  },
-  "dependencies": {
-    "@furo/spec-basetypes": "^1.7.0",
-    "@furo/specs": "^1.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "publishConfig": {
     "access": "public"

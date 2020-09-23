@@ -1,0 +1,45 @@
+spectools: "1.9.2"
+version: "v1.0.0"
+specDir: "./specs"
+specFormat: "yaml" #set to yaml or json
+dependencies:
+  - "git@github.com:theNorstroem/furoBaseSpecs.git v1.10.9" # The importer looks for all **/*.type.spec files recursive The importer looks for all **/*.service.spec files recursive
+dependenciesDir: dependencies
+muSpec:
+  types:
+    - "./muspec/**/*types.yaml"
+    - "./muspec/*types.yaml"
+  services:
+    - "./muspec/**/*services.yaml"
+    - "./muspec/*services.yaml"
+  goPackageBase: "github.com/veith/spectest/dist/pb/" #this is used to prefix the go package option
+  dir: "muspec"
+commands: #camelcase not allowed, commands con only be executed from a flow
+  gen_doc: "./scripts/typedoc/typedoc.sh"
+  publish_npm: "./scripts/test.sh"
+  gen_protoc_commands: "./scripts/protoc/protoc.sh"
+  gen_transcoder: "./scripts/grpcgateway/gateway.sh"
+  exec_protoc_messages : "scripts/proto2DomainTypes.sh"
+  exec_protoc_services : "scripts/proto2DomainServices.sh"
+flows:
+  default: #full spectrum in der prototyping phase
+    - muSpec2Spec
+    - muService2Spec
+    - genEsModule
+  transcoder:
+    - gen_transcoder
+  doc:
+    - gen_doc
+  prototyping:
+    - clearAllProtos
+    - clearAllSpecs
+    - muType2Spec
+    - muService2Spec
+    - genServiceProtos
+    - genServiceProtos
+    - nonexistent
+build:
+  proto:
+    targetDir: "dist/proto/" #Hint: add this to your proto include path
+  esModule:
+    targetFile: "dist/env.js"

@@ -1,4 +1,5 @@
 spectools: "1.9.2"
+module: "github.com/theNorstroem/template-furo-spec-project"
 version: "v1.0.0"
 specDir: "./specs"
 specFormat: "yaml" #set to yaml or json
@@ -12,7 +13,7 @@ muSpec:
   services:
     - "./muspec/**/*services.yaml"
     - "./muspec/*services.yaml"
-  goPackageBase: "github.com/veith/spectest/dist/pb/" #this is used to prefix the go package option
+  goPackageBase: "github.com/theNorstroem/template-furo-spec-project/dist/pb/" #this is used to prefix the go package option
   dir: "muspec"
 commands: #camelcase not allowed, commands con only be executed from a flow
   gen_doc: "./scripts/typedoc/typedoc.sh"
@@ -23,8 +24,12 @@ commands: #camelcase not allowed, commands con only be executed from a flow
   exec_protoc_services : "scripts/proto2DomainServices.sh"
 flows:
   default: #full spectrum in der prototyping phase
-    - muSpec2Spec
-    - muService2Spec
+    - genMessageProtos
+    - genServiceProtos
+    - gen_protoc_commands
+    - exec_protoc_messages
+    - exec_protoc_services
+    - gen_transcoder
     - genEsModule
   transcoder:
     - gen_transcoder

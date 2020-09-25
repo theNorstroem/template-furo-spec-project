@@ -14,7 +14,7 @@ __proto:
         - google/type/money.proto
         - google/protobuf/wrappers.proto
     options:
-        go_package: github.com/veith/spectest/dist/pb/sample;samplepb
+        go_package: github.com/theNorstroem/template-furo-spec-project/dist/pb/sample;samplepb
         java_multiple_files: "true"
         java_outer_classname: SampleProto
         java_package: com.sample
@@ -56,7 +56,7 @@ __proto:
         - google/protobuf/empty.proto
         - sample/sample.proto
     options:
-        go_package: github.com/veith/spectest/dist/pb/Services/sampleservice;sampleservicepb
+        go_package: github.com/theNorstroem/template-furo-spec-project/dist/pb/Services/sampleservice;sampleservicepb
         java_multiple_files: "true"
         java_outer_classname: SampleProto
         java_package: com.Services.sampleservice

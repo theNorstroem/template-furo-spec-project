@@ -12,6 +12,12 @@ you also need to install the [furo spectools](https://github.com/theNorstroem/sp
 
 - `brew install spectools`  
 
+Install dependencies
+
+	go get github.com/veith/protoc-gen-go-patch
+	go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
+	go get google.golang.org/protobuf/cmd/protoc-gen-go"
+	
 ## Quickstart
 Use the template repository from https://github.com/theNorstroem/template-furo-spec-project to create a spec project for your specs.
 More about using [template repositorys can be found here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).

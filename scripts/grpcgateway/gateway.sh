@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGETDIR=pkg/grpc-gateway
+TARGETDIR=dist/grpc-gateway
 mkdir -p $TARGETDIR/cmd
 mkdir -p $TARGETDIR/autoregister
 

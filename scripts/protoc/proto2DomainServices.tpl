@@ -30,7 +30,6 @@ do
 
 
 protoc --proto_path=./ \
---plugin=../../bin/protoc-gen-go-grpc \
 -I. \
 -I$WD/dependencies/github.com/theNorstroem/furoBaseSpecs/dist/proto \
 -I/usr/local/include \

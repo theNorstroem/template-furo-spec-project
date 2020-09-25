@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	grpc_gateway "{{.config.module}}/pkg/grpc-gateway"
+	grpc_gateway "{{.config.module}}/dist/grpc-gateway"
 )
 
 func main() {

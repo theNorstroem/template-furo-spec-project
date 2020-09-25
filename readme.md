@@ -34,7 +34,6 @@ if you want to generate specs from the tiny mu specs ([readme](muspec/readme.md)
 then run
  ```
 spectools muSpec2Spec
-spectools muService2Spec
  ```
 to generate the normal service and type specs. you can find these specs in 'specs' folder. 
 if you have defined these command in flows in .spectools. you can run

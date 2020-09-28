@@ -29,7 +29,7 @@ spectools install
 
 to install your additional dependencies like the base specs which are defined in '.spectool'.
 
-if you want to generate specs from the tiny mu specs ([readme](muspec/readme.md)). you can write the mu spec and put them into 'muspec' folder. 
+if you want to generate specs from the tiny mu specs ([readme](muspecs/readme.md)). you can write the mu spec and put them into 'muspec' folder. 
 
 then run
  ```

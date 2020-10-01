@@ -2,6 +2,17 @@
 mu spec is the most compact form to describe the type and the service. mu specs can be used as
 the basic to generate service and type specs. 
 
+## generate specs from muspecs
+if you want to generate specs from the tiny mu specs.
+you can write the mu spec and put them into 'muspec' folder which you have defined in '.spectool'. 
+
+then run
+ ```
+spectools muSpec2Spec
+ ```
+to generate the normal service and type specs. 
+you can find these specs in 'specs' folder which is also defined in spectools config. 
+
 ## Notation in mu specs
 
 

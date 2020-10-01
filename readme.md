@@ -22,14 +22,17 @@ Install dependencies
 Use the template repository from https://github.com/theNorstroem/template-furo-spec-project to create a spec project for your specs.
 More about using [template repositorys can be found here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
 
-.spectools is the config file for spectools. you need first to run
+.spectools is the config file for spectools. you can configure parameters and initial settings of you spec project.
+just like your module name. here in template it is 'github.com/theNorstroem/template-furo-spec-project'. 
+
+then run
  ```
 spectools install
  ```
 
 to install your additional dependencies like the base specs which are defined in '.spectool'.
 
-if you want to generate specs from the tiny mu specs ([readme](muspecs/readme.md)). you can write the mu spec and put them into 'muspec' folder. 
+if you want to generate specs from the tiny mu specs ([readme](samples/muspecs/readme.md)). you can write the mu spec and put them into 'muspec' folder. 
 
 then run
  ```
@@ -42,7 +45,7 @@ spectools
  ```
 to execute all commands sequentially which are defined in flows. 
 
-To edit the specs ([readme](specs/readme.md)), you can use a json editor or you can use [the api designer](http://api.designer.furo.pro/). 
+To edit the specs ([readme](samples/specs/readme.md)), you can use a json editor or you can use [the api designer](http://api.designer.furo.pro/). 
 
 run 
 ```

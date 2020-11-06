@@ -17,6 +17,7 @@ If you have Go installed, if not follow [the instructions to install GO](https:/
 
 you also need to install the [furo spectools](https://github.com/theNorstroem/spectools). 
 
+- `brew tap theNorstroem/tap`  
 - `brew install spectools`  
 
 Install dependencies

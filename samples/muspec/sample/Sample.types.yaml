@@ -1,0 +1,15 @@
+- type: 'sample.Sample (ce) #Sample with auto Collection and Entity (ce)'
+  fields:
+    id: 'string:1 #A * before the type means required'
+    display_name: 'string:2 #A * berore the type means readonly'
+    tags: '[] string:3 #A [] means repeated, repeated can also be required *[]type or readonly -[]type'
+    update_mask: '.google.protobuf.FieldMask:4 #Needed if you want to patch a record'
+    cost: '.google.type.Money:5 #Needed if you want to patch a record'
+    wint: 'Valueonly:6 #test wrapper type'
+    goint: 'google.protobuf.Int32Value:7 #test wrapper type'
+  target: sample.proto
+- type: 'sample.Valueonly #Test'
+  fields:
+    value: 'int32:1 #A * before the type means required'
+    goint: 'google.protobuf.UInt32Value:2 #test wrapper type'
+  target: sample.proto

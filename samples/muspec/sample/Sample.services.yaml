@@ -1,0 +1,25 @@
+- name: Sample
+  description: Add xxxsome text here.
+  package: Services.sampleservice
+  target: sample.proto
+  services:
+    - md: 'List: GET /samples google.protobuf.Empty , sample.SampleCollection #List samples with pagination.'
+      qp:
+        q: 'string #query string.'
+        page: 'string #Use this field to specify page to display.'
+        filter: 'string #Use this field to specify page to display.'
+        order_by: 'string #Use this field to specify page to display.'
+    - md: 'Get: GET /samples/{xxx} google.protobuf.Empty , sample.SampleEntity #Returns a single sample.'
+      qp:
+        xxx: 'string #The query param xxx stands for XXX id.'
+    - md: 'Create: POST /samples sample.Sample , sample.SampleEntity #Use this to create new samples.'
+    - md: 'Update: PATCH /samples/{xxx} sample.Sample , sample.SampleEntity #Use this to update existing samples.'
+      qp:
+        xxx: 'string #xxx string.'
+    - md: 'Delete: DELETE /samples/{xxx} google.protobuf.Empty , google.protobuf.Empty #Use this to delete existing samples.'
+      qp:
+        xxx: 'string #xxx string.'
+    - md: 'DeleteAll: DELETE /samples google.protobuf.Empty , google.protobuf.Empty #Use this to delete ALL samples.'
+    - md: 'Custom: POST /samples/{xxx}:custom google.protobuf.Empty , google.protobuf.Empty #Custom methods are always POST.'
+      qp:
+        xxx: 'string #xxx string.'
